@@ -16,8 +16,7 @@
     float: left;
     width: 100px;
     margin-top: -20px;
-   
-    
+     
 }
 
 #buscar{
@@ -29,11 +28,11 @@
     #cabecalho{
         display: flex;
         flex-direction: column;
-        height: 100px;
-        width: 100%;
-        border: 1px solid  #000;
         padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
+    
     #buscar{
        display: flex;
        flex-direction: column;
@@ -41,8 +40,6 @@
        align-items: center;
        margin-left: auto;
        margin-right: auto;
-
-       
     }
     #logotipo img{
         display: flex;
@@ -50,10 +47,7 @@
         width: 70px;
         margin-left: auto;
         margin-right: auto;
-
-       
-       
-        
+ 
     }
     
 }
