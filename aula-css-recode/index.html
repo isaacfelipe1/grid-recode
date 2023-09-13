@@ -5,6 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>aula-recode</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        #cabecalho {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #logotipo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #buscar input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        #buscar input[type="button"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        #menu {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        #menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #menu li {
+            display: block;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        #menu a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #menuLateral {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .flex-item {
+            margin-bottom: 10px;
+        }
+
+        .interna {
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #rodape {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 500px) {
+            
+            #cabecalho {
+                text-align: left;
+                display: flex;
+                
+                align-items: center;
+            }
+            #buscar{
+                display: block;
+                align-items: center;
+                text-align: center;
+                margin-left: -50px;
+            }
+            .logogotipo{
+                display: block;
+                margin-top: -50px;
+                
+            }
+
+            #buscar input[type="text"] {
+                width: auto;
+                margin-bottom: 0;
+            }
+
+            #buscar input[type="button"] {
+                width: auto;
+            }
+
+            #menu {
+                text-align: left;
+            }
+
+            #menu ul {
+                display: flex;
+                justify-content: center;
+            }
+
+            #menu li {
+                display: inline;
+                margin: 0 10px;
+            }
+
+            #menuLateral {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .flex-item {
+                flex: 1;
+                margin-bottom: 0;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="cabecalho">
@@ -12,8 +163,8 @@
             <img class="logotipo" src="https://cdn.icon-icons.com/icons2/2528/PNG/512/profile_user_icon_151793.png" alt="logo">
         </div>
         <div id="buscar">
-            <form >
-                <input type="text">
+            <form>
+                <input type="text" placeholder="Digite sua busca">
                 <input type="button" value="Buscar">
             </form>
         </div>
@@ -32,7 +183,6 @@
             <div class="flex-item">Cadastre</div>
             <div class="flex-item">Minhas Viagens</div>
         </div>
-       
     </div>
     <div class="interna">
         <div class="grid-container">
@@ -43,14 +193,10 @@
             <div class="grid-item">Produto 5</div>
             <div class="grid-item">Produto 6</div>
         </div>
-       
     </div>
     <div class="limpar"></div>
     <div id="rodape">
         rodape
     </div>
-
-
-    
 </body>
 </html>
